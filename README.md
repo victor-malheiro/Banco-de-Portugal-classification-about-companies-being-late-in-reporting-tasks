@@ -7,9 +7,9 @@ information about several companies and if they submitted the reports late or no
 2. [Preprocessing Methods](#preprocessing-methods)
 3. [Predictive Models](#predictive-models)
 4. [Accuracy Measures](#accuracy-measures)
-5. [Explainability](#Explainability)
+5. [Explainability](#explainability)
 
-## Problem Descriptiomn
+## Problem Description
 <div align="justify">Banco de Portugal has been observing that some companies often lag behind when submitting their information reports. Thus, the purpose of this project is to find whether it is possible to classify 
 the companies as late in the reporting tasks or not, based on financial and economical aspects concerning those companies, and also to acknowledge the attributes that contribute to this situation.</div></br>
 
@@ -133,10 +133,9 @@ to predict which companies are going to be late in their report submission.</div
 ## Explainability
 <div align="justify">In this part of the report, the explainability of the best model experiment (regarding the score presented in Kaggle’s public leaderboard) will be explored.</div></br>
 
-<div align="justify">The Gradient Boosted Trees algorithm can be considered as a black-box model. It is also important to note that the Dalex library, previously referred to, constitutes a form of explainable machine learning, 
-but in this specific problem it was primarily used as a form of feature selection.</div></br>
+<div align="justify">The Gradient Boosted Trees algorithm can be considered as a black-box model. It is also important to note that the Dalex library, previously referred to, constitutes a form of explainable machine learning, but in this specific problem it was primarily used as a form of feature selection.</div></br>
 
-<div align="justify">In this section, different explainability techniques will be applied, such as, feature relevance (SHAP), explanations by simplification (LIME) and visual explanations (Partial Dependence Plots).</div></br>
+<div align="justify">In this section, different explainability techniques can be applied, such as, feature relevance (SHAP), explanations by simplification (LIME) and visual explanations (Partial Dependence Plots). The attention will be mainly on the feature relevance (SHAP).</div></br>
 
 <div align="justify">Firstly, considering the first observation of the test set. The model predicted that the class assigned to this observation is the positive class (y=1). With the use of the XAI view node in
 knime it was possible to obtain a local explanation for this specific observation.</div></br>
